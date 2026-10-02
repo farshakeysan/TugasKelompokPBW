@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Anggota Kelompok</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: white;
+        }
+
+        .hero {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            background: white;
+            color: #2563eb;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            background: #e5e7eb;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .members {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #2563eb;
+        }
+
+        .card h3 {
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+
+        .card .npm {
+            color: #2563eb;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .info {
+            margin-top: 20px;
+            text-align: left;
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        .info p {
+            margin-bottom: 7px;
+            color: #333;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #d1d5db;
+        }
+
+        @media (max-width: 900px) {
+            .members {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .members {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Profil Anggota Kelompok</h1>
+
+            <p>
+                Selamat datang di website profil kelompok kami.
+                Website ini berisi informasi dan perkenalan
+                dari setiap anggota kelompok dan keunikan kami.
+            </p>
+
+            <a href="#anggota" class="btn">Lihat Anggota Kelompok</a>
+        </div>
+    </header>
+
+
+    <section id="anggota">
+
+        <div class="section-title">
+            <h2>Anggota Kelompok</h2>
+            <p>Kenalan dengan anggota kelompok kami</p>
+        </div>
+
+        <div class="members">
+
+            <div class="card">
+
+                <img src="Rehan.jpeg" alt="Foto Anggota 1">
+
+                <h3>Ananda Raihan Alfarizi</h3>
+
+                <div class="npm">
+                    NPM: 2507071013
+                </div>
+
+                <p>
+                    Saya adalah mahasiswa yang tertarik
+                    dengan teknologi dan pengembangan website.
+                </p>
+
+                <div class="info">
+                    <p><strong>Prodi:</strong> Manajemen Informatika</p>
+                    <p><strong>Hobi:</strong> Gaming, Scroll Instagram</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Keey.jpeg" alt="Foto Anggota 2">
+
+                <h3>Farsha Keysan Aryadi</h3>
+
+                <div class="npm">
+                    NPM: 2507071016
+                </div>
+
+                <p>
+                    Saya memiliki minat dalam bidang teknologi,
+                    desain, dan dunia digital.
+                </p>
+
+                <div class="info">
+                    <p><strong>Prodi:</strong> Manajemen Informatika</p>
+                    <p><strong>Hobi:</strong> Gaming, Scroll Facebook</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Vina.jpeg" alt="Foto Anggota 3">
+
+                <h3>Vina Widya Pratiwi</h3>
+
+                <div class="npm">
+                    NPM: 2507071006
+                </div>
+
+                <p>
+                    Saya tertarik mempelajari pemrograman
+                    dan perkembangan teknologi.
+                </p>
+
+                <div class="info">
+                    <p><strong>Prodi:</strong> Manajemen Informatika</p>
+                    <p><strong>Hobi:</strong> Membaca, Musik</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Repan.jpeg" alt="Foto Anggota 4">
+
+                <h3>Muhammad Revan Mahardika</h3>
+
+                <div class="npm">
+                    NPM: 2557071003
+                </div>
+
+                <p>
+                    Saya senang mempelajari hal baru
+                    khususnya yang berkaitan dengan teknologi.
+                </p>
+
+                <div class="info">
+                    <p><strong>Prodi:</strong> Manajemen Informatika</p>
+                    <p><strong>Hobi:</strong> Gaming, Scroll TikTok</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/foto5.jpg" alt="Foto Anggota 5">
+
+                <h3>Naura Rahkma Qeisha</h3>
+
+                <div class="npm">
+                    NPM: 2557071017
+                </div>
+
+                <p>
+                    Saya tertarik dengan desain dan
+                    pengembangan aplikasi berbasis teknologi.
+                </p>
+
+                <div class="info">
+                    <p><strong>Prodi:</strong> Manajemen Informatika</p>
+                    <p><strong>Hobi:</strong> Desain, Musik</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+    <footer>
+        <p>
+            © 2026 Kelompok Kami | Manajemen Informatika
+        </p>
+    </footer>
+
+</body>
+</html>
